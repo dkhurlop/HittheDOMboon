@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>LadyBeats</title>
+</head>
+
+<body>
+    <header>
+        <img class="image-logo" src="/imgs/logo.png" alt="logo">
+        <nav id="items">
+            <a class="nav-link" href="#">Premium</a>
+            <a class="nav-link" href="#">Help</a>
+            <a class="nav-link" href="#">Download</a>
+            <a class="nav-link" id="signup" href="#">sign up</a>
+            <a class="nav-link" id="log-in" href="#">Log In</a>
+        </nav>
+        <div class="nav-toggle" id="toggle">
+            <span class="line"></span>
+            <span></span>
+            <span class="line"></span>
+        </div>
+    </header>
+    <main class="container">
+        <div class="text-box">
+            <h1>Music for everyone.</h1>
+            <h6 class="h6-main">Millions of songs. No credit card needed.</h6>
+            <button class="hit">Hit the</button>
+        </div>
+
+        <section class="drum-kit-section">
+
+            <img class="drumkit" src="imgs/drumkit.png" usemap="#image-map">
+            <map name="image-map">
+                <area target="_self" alt="pad-left-up" title="pad-left-up" href="#" coords="76,92,58" shape="circle"
+                    onclick="makeSound('audio-element-left-up')">
+                <audio id="audio-element-left-up">
+                    <source src="/sound/tom1.wav" type="audio/wav"> </audio>
+
+                <area id="pad" target="_self" alt="pad-left-center" title="pad-left-center" href="#" coords="134,214,59"
+                    shape="circle" onclick="makeSound('audio-element-left-center')">
+                <audio id="audio-element-left-center">
+                    <source src="/sound/tom3.wav" type="audio/wav">
+                </audio>
+
+                <area class="pad" target="_self" alt="pad-left-down" title="pad-left-down" href="#" coords="199,364,81"
+                    shape="circle" onclick="makeSound('audio-element-left-down')">
+                <audio id="audio-element-left-down">
+                    <source src="/sound/hit-hat.wav" type="audio/wav">
+                </audio>
+
+                <area target="_self" alt="pad-right-down" title="pad-right-down" href="#" coords="575,365,79"
+                    shape="circle" onclick="makeSound('audio-element-right-down')">
+                <audio id="audio-element-right-down">
+                    <source src="/sound/redoblante.wav" type="audio/wav">
+                </audio>
+
+                <area target="_self" alt="pad-right-center" title="pad-right-center" href="#" coords="639,214,57"
+                    shape="circle" onclick="makeSound('audio-element-right-center')">
+                <audio id="audio-element-right-center">
+                    <source src="/sound/tom4.wav" type="audio/wav">
+                </audio>
+
+                <area target="_self" alt="pad-right-up" title="pad-right-up" href="#" coords="699,91,55"
+                    onclick="makeSound('audio-element-right-up')" shape="circle">
+                <audio id="audio-element-right-up">
+                    <source src="/sound/tom2.wav" type="audio/wav">
+                </audio>
+
+                <area target="_self" alt="central-a" title="central-a" href="#" coords="294,165,81"
+                    onclick="makeSound('audio-element-central-a')" shape="circle">
+                <audio id="audio-element-central-a">
+                    <source src="/sound/bombo.wav" type="audio/wav">
+                </audio>
+
+                <area target="_self" alt="central-b" title="central-b" href="#" coords="480,167,79"
+                    onclick="makeSound('audio-element-central-b')" shape="circle">
+                <audio id="audio-element-central-b">
+                    <source src="/sound/crash.wav" type="audio/wav"></audio>
+        </section>
+        <div class="backimage"></div>
+        </map>
+    </main>
+
+    <footer>
+        <button class="big-pad">Hit</button>
+        <h3>Try Premium free For 1 month.</h3>
+        <h6 class="h6-footer">Play millions of songs ad-free on-demand, and offline.</h6>
+        <button class="button-see">SEE PRICING</button>
+    </footer>
+
+    <script src="/script.js"></script>
+</body>
+
+</html>
