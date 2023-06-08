@@ -10,7 +10,7 @@
   font-family: var(--font-main);
 }
 
-body{
+body {
   background-color: #01001f;
 }
 
@@ -18,7 +18,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 1rem 0rem 1rem 20rem;
+  margin: 1rem 0rem 1rem 10rem;
   padding: 0rem;
 }
 
@@ -26,8 +26,8 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-right: 21rem;
-  width: 30vw;
+  margin-right: 10rem;
+  width: 40%;
 }
 
 .image-logo {
@@ -38,6 +38,9 @@ nav {
 }
 
 .nav-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   color: white;
   text-decoration: none;
   font-size: 1.3rem;
@@ -47,7 +50,7 @@ nav {
   color: var(--color-button);
   border-right: 1px solid rgba(255, 255, 255, 0.445);
   padding-right: 2.3rem;
-  margin-right:0%;
+  margin-right: 0%;
   box-sizing: border-box;
 }
 .nav-toggle {
@@ -58,22 +61,22 @@ nav {
   display: flex;
   justify-content: center;
   align-content: center;
-  margin-bottom: 0;
-  margin-left: 10rem;
+  margin:0rem, 0rem, 0rem, 7rem;
 }
-.drumkit{
+
+.drumkit {
+  width: 100%;
   z-index: -1;
   filter: drop-shadow(0.5rem 1rem 1rem rgba(0, 0, 0, 0.9));
-
 }
 .drum-kit-section {
   z-index: 1;
   padding: 0%;
+  margin: 0rem, 1rem;
   display: flex;
   justify-content: center;
   align-content: center;
   width: 50vw;
-
 }
 
 .text-box {
@@ -92,7 +95,7 @@ h1 {
 .h6-main {
   margin: 0%;
   width: 160%;
-  padding: 1rem 0rem 2rem 0rem;
+  padding: 0.5rem 0rem 1rem 0rem;
   font-size: 1.25rem;
   color: var(--color-text);
 }
@@ -107,11 +110,11 @@ h1 {
   font-size: 1.37rem;
 }
 
-.pad :hover{
+.pad :hover {
   background-color: grey;
 }
 
-.big-pad{
+.big-pad {
   display: none;
 }
 
@@ -121,20 +124,21 @@ footer {
   align-items: center;
   flex-direction: column;
   margin: 0;
+  padding: 0%;
 }
 
 h3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin:1rem 0rem 0rem;
+  margin: 0;
   color: white;
   font-size: 2.3rem;
 }
 
 .h6-footer {
   margin: 0%;
-  padding: 1rem 0rem 2rem 0rem;
+  padding: 0rem 0rem 1rem 0rem;
   font-size: 1rem;
   color: var(--color-text);
 }
@@ -146,33 +150,40 @@ h3 {
   border-radius: 2rem;
   font-size: 1.25rem;
   text-decoration: none;
-  font-weight:bolder;
+  font-weight: bolder;
 }
 
-@media (max-width: 768px) {
-    body{
-        margin: 0%;
-    }
+@media (max-width: 844px) {
+  body {
+    margin: 0%;
+    padding: 0%;
+  }
+
+  main {
+    width: 90%;
+    margin: 0;
+    padding: 0%;
+  }
 
   nav {
     position: absolute;
-    top: 10rem;
-    left:0;
+    top: 6rem;
+    left: 0;
     right: 0;
     margin: 0%;
-    background-color:#01001f;
+    background-color: #01001f;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
     z-index: 2;
-    width: 130%;
+    width: 100%;
     height: 60%;
     color: white;
-    transform:translateX(-100%) ;
+    transform: translateX(-100%);
   }
- 
-  #signup{
-    margin-left:2.3rem ;
+
+  #signup {
+    margin-left: 2.3rem;
   }
 
   header {
@@ -180,16 +191,17 @@ h3 {
   }
 
   .image-logo {
-    margin: 6rem 0rem 3rem 11rem;
+    margin: 5%;
   }
 
   .nav-toggle {
     display: flex !important;
-    align-items: end;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     border-radius: 4rem;
-    margin: 0rem 10rem 3rem 3rem;
-    padding: 0.6rem 1.8rem;
+    margin: 2%;
+    padding: 0.5rem 0.5rem;
     background-color: var(--color-button);
   }
 
@@ -207,28 +219,31 @@ h3 {
     transition: all 0.2s linear;
   }
 
-  .close span{
-    transform: rotate(45deg) translate(0px, 0px);
+  .close span {
+    transform: rotate(45deg) translate(-7px, -8px);
   }
-  .close span:nth-child(2){
-    transform: rotate(45deg) translate(0px, 0px);
+  .close span:nth-child(2) {
+    display: none;
   }
-  .close span:nth-child(3){
-    transform: rotate(-45deg) translate(-5px, 1px);
+  .close span:nth-child(3) {
+    transform: rotate(-45deg) translate(-7px, 1px);
   }
-  .open{ transform: translateX(0) !important}
+  .open {
+    transform: translateX(0) !important;
+  }
 
   .container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column-reverse;
-    margin: 0rem 0rem 3rem 5rem;
+    margin: 1rem;
   }
-  .drumkit{
-    width: 35rem;
-    margin-left: 3rem;
+
+  .drumkit {
+    width: 20rem;
   }
+
   .drum-kit-section {
     display: flex;
     justify-content: center;
@@ -248,11 +263,14 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0rem 0rem 0rem 6rem;
+    margin: 1rem;
   }
 
   h1 {
     font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .hit {
@@ -278,14 +296,21 @@ h3 {
     justify-content: center;
     align-items: center;
     color: #404040;
-    margin: 200px 0px 150px;
+    margin: 200px 0px 150px 0px;
   }
 
   h3 {
     font-size: 1.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1 rem;
   }
 
   .h6-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 1rem;
   }
 }
